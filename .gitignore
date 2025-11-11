@@ -7,6 +7,12 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/Dotnet.gitignore
 
+# Binaries
+# *.dll
+*.exe
+*.pdb
+*.mdb
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -32,6 +38,13 @@ artifacts/
 ScaffoldingReadMe.txt
 
 # NuGet Packages
+**/packages/
+!global.json
+# **/packages.config
+**/project.json
+**/project.lock.json
+
+# NuGet Packages
 *.nupkg
 # NuGet Symbol Packages
 *.snupkg
@@ -52,3 +65,20 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Visual Studio cache files and folders
+.vs/
+*.csproj.user
+*.sln.docstates
+
+# Mac settings and files
+.DS_Store
+
+# Mono settings and files
+_webapp/monodevelop.user
+*.pidb
+*.suo
+
+RunFolder
+
+*.licx
